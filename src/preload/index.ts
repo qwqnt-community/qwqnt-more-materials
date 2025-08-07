@@ -1,7 +1,8 @@
 import { contextBridge, ipcRenderer } from 'electron';
 
-contextBridge.exposeInMainWorld('QwQNTTemplate', {
-  greeting: () => {
-    ipcRenderer.send('QwQNTTemplate.greeting');
-  }
+contextBridge.exposeInMainWorld('MoreMaterials', {
+  update: () => {
+    ipcRenderer.send('MoreMaterials.update');
+  },
+  getPlatform: (): Promise<string> => ipcRenderer.invoke('MoreMaterials.getPlatform'),
 });
