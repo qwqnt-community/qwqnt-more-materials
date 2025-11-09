@@ -1,10 +1,9 @@
 {
   "$schema": "./plugin.schema.json",
-  "name": "qwqnt-more_materials",
+  "name": "qwqnt-more-materials",
   "version": "1.0.0",
   "description": "QwQNT 插件，添加更多的背景材质，替换原本的透明效果（Windows 11 22H2 及以上，Linux + KDE + X11）",
   "type": "module",
-  "main": "./main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix src/**/* --ext .js,.ts",
@@ -14,31 +13,31 @@
   "license": "MIT",
   "devDependencies": {
     "@electron-toolkit/eslint-config-ts": "^3.1.0",
-    "@electron-toolkit/tsconfig": "^1.0.1",
-    "@eslint/js": "^9.32.0",
-    "@types/node": "^24.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.39.0",
-    "@typescript-eslint/parser": "^8.39.0",
-    "electron": "^37.2.6",
-    "electron-vite": "^4.0.0",
-    "eslint": "^9.32.0",
-    "jiti": "^2.5.1",
-    "typescript-eslint": "^8.39.0",
+    "@electron-toolkit/tsconfig": "^2.0.0",
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "electron": "^39.1.1",
+    "electron-vite": "^4.0.1",
+    "eslint": "^9.39.1",
+    "jiti": "^2.6.1",
+    "typescript-eslint": "^8.46.3",
     "unplugin-zip-pack": "^1.0.3",
-    "vite": "^7.1.0",
-    "vite-plugin-checker": "^0.10.2",
+    "vite": "^7.2.2",
+    "vite-plugin-checker": "^0.11.0",
     "vite-plugin-cp": "^6.0.3"
   },
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.20.0",
   "qwqnt": {
     "name": "More Materials",
     "inject": {
+      "main": "./main/index.js",
       "preload": "./preload/index.cjs",
       "renderer": "./renderer/index.js"
     },
     "dependencies": {
-      "qwqnt-renderer_events": "^1.0.0",
-      "qwqnt-plugin_settings": "^1.2.3"
+      "qwqnt-plugin-settings": "^2.0.0"
     }
   }
 }

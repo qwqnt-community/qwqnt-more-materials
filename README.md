@@ -1,4 +1,4 @@
-# QwQNT-MoreMaterials
+# qwqnt-more-materials
 
 详情见[原仓库](https://github.com/mo-jinran/More-Materials)，本仓库为 QwQNT 移植版
 
@@ -6,7 +6,7 @@
 ```
     MIT License
 
-    QwQNT-MoreMaterials
+    qwqnt-more-materials
     Copyright (C) 2025  沫烬染,　風間青祢
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
