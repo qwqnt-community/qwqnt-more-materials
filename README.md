@@ -2,6 +2,8 @@
 
 详情见[原仓库](https://github.com/mo-jinran/More-Materials)，本仓库为 QwQNT 移植版
 
+请先安装前置插件 qwqnt-hako。
+
 ## License
 ```
     MIT License
