@@ -6,19 +6,23 @@ declare namespace MoreMaterials {
 }
 
 declare namespace RendererEvents {
+  const onLogin: (callback: (uid?: string) => void) => void;
   const onSettingsWindowCreated: (callback: () => void) => void;
+  const onSettingsWindowCreatedOnce: (callback: () => void) => void;
+  const onMessageWindowCreated: (callback: () => void) => void;
+  const onMessageWindowCreatedOnce: (callback: () => void) => void;
 }
 
 interface IQwQNTPlugin {
   name: string;
-  qwqnt: {
-    name: string;
+  qwqnt?: {
+    name?: string;
     icon?: string;
     inject?: {
+      main?: string;
       renderer?: string;
       preload?: string;
     };
-    settings?: string;
   };
 }
 

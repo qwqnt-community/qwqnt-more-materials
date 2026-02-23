@@ -14,21 +14,21 @@
   "devDependencies": {
     "@electron-toolkit/eslint-config-ts": "^3.1.0",
     "@electron-toolkit/tsconfig": "^2.0.0",
-    "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.0",
-    "@typescript-eslint/eslint-plugin": "^8.46.3",
-    "@typescript-eslint/parser": "^8.46.3",
-    "electron": "^39.1.1",
-    "electron-vite": "^4.0.1",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
+    "electron": "^40.6.0",
+    "electron-vite": "^5.0.0",
+    "eslint": "^10.0.1",
     "jiti": "^2.6.1",
-    "typescript-eslint": "^8.46.3",
+    "typescript-eslint": "^8.56.0",
     "unplugin-zip-pack": "^1.0.3",
-    "vite": "^7.2.2",
-    "vite-plugin-checker": "^0.11.0",
+    "vite": "^7.3.1",
+    "vite-plugin-checker": "^0.12.0",
     "vite-plugin-cp": "^6.0.3"
   },
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.30.1",
   "qwqnt": {
     "name": "More Materials",
     "inject": {
@@ -37,7 +37,7 @@
       "renderer": "./renderer/index.js"
     },
     "dependencies": {
-      "qwqnt-plugin-settings": "^2.0.0"
+      "qwqnt-hako": "^1.0.0"
     }
   }
 }
